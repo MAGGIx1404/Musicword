@@ -1,0 +1,541 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    scroll-behavior: smooth;
+    font-family: 'Lora', serif;
+    background-color: #f7f6ee;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav img{
+    width: 10rem;
+    height: auto;
+}
+
+header nav .top-btn{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .top-btn a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: black;
+    position: relative;
+    padding: 0 0.4rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    transition: .5s;
+}
+
+header nav .top-btn a:hover{
+    color: #F9D29A;
+}
+
+header nav .top-btn a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 0;
+    left: 0;
+    background-color: black;
+    transition: width 0.3s ease-in-out;
+}
+
+header nav .top-btn a::after {
+    bottom: 0;
+}
+
+header nav .top-btn a:hover::after {
+    width: 100%;
+}
+
+header{
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: url(../images/top-background.svg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+header h1{
+    margin-top: 10rem;
+    font-size: 3rem;
+    font-weight: bold;
+    width: 60%;
+}
+
+header p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+header a{
+    margin-top: 1rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    transition: all .5s ease;
+}
+
+header a:hover{
+    color: black;
+    background-color: #F9D29A;
+}
+
+main{
+    background: url(../images/back.png);
+    background-size: cover;
+}
+
+main h1{
+    position: relative;
+    font-size: 3rem;
+    font-weight: bold;
+    top: -6rem;
+    text-align: center;
+}
+
+main .back{
+    padding-top: 1rem;
+    width: 100%;
+    height: auto;
+    z-index: 100;
+}
+
+main .leaf-1{
+    width: 14rem;
+    height: auto;
+    top: 0rem;
+    left: 14rem;
+    position: relative;
+}
+
+main .leaf-2{
+    position: relative;
+    width: 14rem;
+    height: auto;
+    top: -10rem;
+    right: -60rem;
+}
+
+.story{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: url(../images/backgrond2.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.story .left-story{
+    width: 50%;
+    height: auto;
+}
+
+.story .left-story img{
+    width: 100%;
+    height: auto;
+}
+
+.story .right-story{
+    width: 50%;
+    height: auto;
+}
+
+.story .right-story h1{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.story .right-story p{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.story .right-story a{
+    margin-top: 2rem;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 1rem 2rem; 
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: .5s ease;
+}
+
+.story .right-story a:hover{
+    background-color: #F9D29A;
+    color: black;
+}
+
+.bird{
+    height: 75vh;
+    background: url(../images/background3.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.bird img{
+    padding-top: 1rem;
+    width: 70%;
+    height: auto;
+    left: -5rem;
+    position: relative;
+}
+
+.portfolio{
+    text-align: center;
+}
+
+.portfolio img{
+    width: 100%;
+    height: auto;
+}
+
+.portfolio a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: all .5s ease;
+    top:-25rem;
+    text-transform: capitalize;
+}
+
+.portfolio a:hover{
+    color: black;
+    background-color: #F9D29A;
+}
+
+.border-sec{
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.border-sec .flower{
+    width: 60%;
+}
+
+.border-sec .pan-1{
+    width: 20%;
+}
+
+.border-sec .pan-2{
+    width: 20%;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 0;
+    background: url(../images/footer-back.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60vh;
+}
+
+footer .first-col{
+    width: 30%;
+}
+
+footer .first-col img{
+    width: 50%;
+    height: auto;
+}
+
+footer .first-col p{
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+footer .sec-col{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+}
+
+footer .sec-col h4{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+footer .sec-col a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+    transition: all .5s ease;
+    padding: 0.2rem 0.5rem;
+    margin-top: 1rem;
+    text-transform: capitalize;
+    position: relative;
+}
+
+footer .last-col{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+}
+
+footer .last-col h4{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+footer .last-col a{
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: all .5s ease;
+    text-transform: capitalize;
+    position: relative;
+}
+
+footer .last-col a i{
+    font-size: 2rem;
+}
+
+footer .sec-col a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 0;
+    left: 0;
+    background-color: black;
+    transition: width 0.3s ease-in-out;
+}
+
+footer .sec-col a::after {
+    bottom: 0;
+}
+
+footer .sec-col a:hover::after {
+    width: 100%;
+}
+
+footer .last-col a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 0;
+    left: 0;
+    background-color: black;
+    transition: width 0.3s ease-in-out;
+}
+
+footer .last-col a::after {
+    bottom: 0;
+}
+
+footer .last-col a:hover::after {
+    width: 100%;
+}
+
+/* end */
+
+/* media quarry */
+
+@media(max-width:1400px){
+    main .leaf-1{
+        display: none;
+    }
+    main .leaf-2{
+        display: none;
+    }
+    main h1{
+        top: 0;
+    }
+}
+
+@media(max-width:900px){
+    .story .right-story h1{
+        font-size: 1.5rem;
+    }
+    .story .right-story p{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .portfolio a{
+        top: -15rem;
+    }
+}
+
+@media(max-width:800px){
+    header nav .top-btn{
+        width: 70%;
+    }
+    .bird{
+        height: 50vh;
+    }
+}
+
+@media(max-width:700px){
+    footer{
+        background-size: contain;
+        background-position: bottom;
+        height: 50vh;
+    }
+    header nav .top-btn a{
+        font-size: 1rem;
+    }
+}
+
+@media(max-width:600px){
+    header{
+        height: 80vh;
+    }
+    header nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    header nav .top-btn{
+        width: 100%;
+        margin-top: 1rem;
+    }
+    header h1{
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+    header p{
+        font-size: 1.4rem;
+    }
+}
+
+@media(max-width:500px){
+    .portfolio a{
+        top: -8rem;
+    }
+    .bird{
+        height: 35vh;
+    }
+    .bird img{
+        width: 80%;
+    }
+    .story{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .story .left-story{
+        width: 100%;
+    }
+    .story .right-story{
+        width: 100%;
+    }
+}
+
+@media(max-width:340px){
+    header nav .top-btn a{
+        font-size: .8rem;
+    }
+    header{
+        height: 50vh;
+    }
+    header h1{
+        font-size: 1rem;
+    }
+    header p{
+        font-size: 0.8rem;
+    }
+    header a{
+        font-size: 1rem;
+        padding: 1rem;
+    }
+    main h1{
+        font-size: 1rem;
+    }
+    .story .right-story a{
+        font-size: 1rem;
+        padding: 1rem;
+    }
+    .bird{
+        height: 20vh;
+    }
+    .portfolio a{
+        font-size: 1.2rem;
+        padding: 1rem;
+        top: -5rem;
+    }
+    footer .first-col p{
+        font-size: 0.5rem;
+    }
+    footer .sec-col h4{
+        font-size: 1rem;
+    }
+    footer .sec-col a{
+        font-size: .8rem;
+    }
+    footer .last-col h4{
+        font-size: 1rem;
+    }
+    footer .last-col a{
+        font-size: 0.8rem;
+    }
+}
+/* end */
